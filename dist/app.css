@@ -1,3 +1,73 @@
 @tailwind base;
+[x-cloak] { display: none; }
+
+.tab-content section {
+  display: none;
+}
+
+.tabs button:focus{
+  color: white;
+  background: linear-gradient(to right, #FF4000,#FF9500);
+}
+
+.tab-content .active {
+  display: flex;
+}
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+}
+
+.divider::before {
+  background: white;
+}
+.divider::after {
+  background: white;
+}
+
+.mySwiper .swiper-button-next {
+  top: 262px !important;
+  border: 1px solid #4e4653;
+  padding: 20px;
+}
+
+.mySwiper .swiper-button-prev {
+  top: 262px !important;
+  left: 210px !important;
+  border: 1px solid #4e4653;
+  padding: 20px;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  font-size: 21px !important;
+  color: white;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  font-size: 21px !important;
+  color: white;
+}
+
+.mySwiper-2 .swiper-button-next {
+  border: 1px solid #4e4653;
+  padding: 20px;
+  background: #403847;
+}
+
+.mySwiper-2 .swiper-button-next:hover{
+  background: linear-gradient(to right, #FF4000,#FF9500);
+}
+.mySwiper-2 .swiper-button-prev {
+  background: #403847;
+  border: 1px solid #4e4653;
+  padding: 20px;
+}
+.mySwiper-2 .swiper-button-prev:hover{
+  background: linear-gradient(to right, #FF4000,#FF9500);
+}
 @tailwind components;
 @tailwind utilities;
