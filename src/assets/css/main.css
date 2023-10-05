@@ -1427,9 +1427,19 @@ video {
     padding: 3px;
   }
 
+  .before\:sm\:p-\[1px\]::before {
+    content: var(--tw-content);
+    padding: 1px;
+  }
+
   .after\:sm\:p-\[3px\]::after {
     content: var(--tw-content);
     padding: 3px;
+  }
+
+  .after\:sm\:p-\[1px\]::after {
+    content: var(--tw-content);
+    padding: 1px;
   }
 }
 
