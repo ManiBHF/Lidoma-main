@@ -1089,6 +1089,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-\[30px\] {
+  padding: 30px;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1422,17 +1426,12 @@ video {
     display: none;
   }
 
-  .before\:sm\:p-\[3px\]::before {
-    content: var(--tw-content);
-    padding: 3px;
-  }
-
   .before\:sm\:p-\[1px\]::before {
     content: var(--tw-content);
     padding: 1px;
   }
 
-  .after\:sm\:p-\[3px\]::after {
+  .before\:sm\:p-\[3px\]::before {
     content: var(--tw-content);
     padding: 3px;
   }
@@ -1440,6 +1439,11 @@ video {
   .after\:sm\:p-\[1px\]::after {
     content: var(--tw-content);
     padding: 1px;
+  }
+
+  .after\:sm\:p-\[3px\]::after {
+    content: var(--tw-content);
+    padding: 3px;
   }
 }
 
