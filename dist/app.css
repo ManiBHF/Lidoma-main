@@ -1,13 +1,15 @@
 @tailwind base;
-[x-cloak] { display: none; }
+[x-cloak] {
+  display: none;
+}
 
 .tab-content section {
   display: none;
 }
 
-.tabs button:focus{
+.tabs button:focus {
   color: white;
-  background: linear-gradient(to right, #FF4000,#FF9500);
+  background: linear-gradient(to right, #ff4000, #ff9500);
 }
 
 .tab-content .active {
@@ -26,14 +28,21 @@
 }
 
 .mySwiper .swiper-button-next {
-  top: 262px !important;
+  top: 288px !important;
+  border: 1px solid #4e4653;
+  padding: 20px;
+}
+ 
+.mySwiper .swiper-button-prev {
+  top: 288px !important;
+  left: 210px !important;
   border: 1px solid #4e4653;
   padding: 20px;
 }
 
-.mySwiper .swiper-button-prev {
+.mob-sl .mySwiper .swiper-button-prev {
   top: 262px !important;
-  left: 210px !important;
+  left: 230px !important;
   border: 1px solid #4e4653;
   padding: 20px;
 }
@@ -58,16 +67,54 @@
   background: #403847;
 }
 
-.mySwiper-2 .swiper-button-next:hover{
-  background: linear-gradient(to right, #FF4000,#FF9500);
+.mySwiper-2 .swiper-button-next:hover {
+  background: linear-gradient(to right, #ff4000, #ff9500);
 }
 .mySwiper-2 .swiper-button-prev {
   background: #403847;
   border: 1px solid #4e4653;
   padding: 20px;
 }
-.mySwiper-2 .swiper-button-prev:hover{
-  background: linear-gradient(to right, #FF4000,#FF9500);
+.mySwiper-2 .swiper-button-prev:hover {
+  background: linear-gradient(to right, #ff4000, #ff9500);
+}
+@media screen and (max-width: 768px) {
+  .mySwiper-2 .swiper-button-prev{
+    margin-top: 125px;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mySwiper-2 .swiper-button-next{
+    margin-top: 125px;
+    margin-right: 100px;
+  }
+}
+
+.mySwiper-3 .swiper-button-next {
+  border: 1px solid #4e4653;
+  padding: 20px;
+  background: #403847;
+}
+.mySwiper-3 .swiper-button-next:hover {
+  background: linear-gradient(to right, #ff4000, #ff9500);
+}
+.mySwiper-3 .swiper-button-prev {
+  background: #403847;
+  border: 1px solid #4e4653;
+  padding: 20px;
+}
+.mySwiper-3 .swiper-button-prev:hover {
+  background: linear-gradient(to right, #ff4000, #ff9500);
+}
+ 
+.mySwiper-3 .swiper-button-prev{
+  margin-top: 183px;
+  margin-left: 100px;
+}
+.mySwiper-3 .swiper-button-next{
+  margin-top: 183px;
+  margin-right: 100px;
 }
 @tailwind components;
 @tailwind utilities;

@@ -15,6 +15,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('../images/social-media-bg.png')",
+        'hero-pattern-mb': "url('../images/Union.png')",
+        'hero-pattern-footer': "url('../images/footer.png')",
       }
     },
   },
