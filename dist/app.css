@@ -1,4 +1,5 @@
 @tailwind base;
+
 [x-cloak] {
   display: none;
 }
@@ -15,6 +16,7 @@
 .tab-content .active {
   display: flex;
 }
+
 .swiper-pagination-bullet {
   width: 18px;
   height: 18px;
@@ -23,6 +25,7 @@
 .divider::before {
   background: white;
 }
+
 .divider::after {
   background: white;
 }
@@ -40,7 +43,7 @@
     padding: 20px;
   }
 }
- 
+
 .mySwiper .swiper-button-prev {
   top: 288px !important;
   left: 210px !important;
@@ -78,22 +81,26 @@
 .mySwiper-2 .swiper-button-next:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 .mySwiper-2 .swiper-button-prev {
   background: #403847;
   border: 1px solid #4e4653;
   padding: 20px;
 }
+
 .mySwiper-2 .swiper-button-prev:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 @media screen and (max-width: 768px) {
-  .mySwiper-2 .swiper-button-prev{
+  .mySwiper-2 .swiper-button-prev {
     margin-top: 125px;
     margin-left: 100px;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .mySwiper-2 .swiper-button-next{
+  .mySwiper-2 .swiper-button-next {
     margin-top: 125px;
     margin-right: 100px;
   }
@@ -104,25 +111,30 @@
   padding: 20px;
   background: #403847;
 }
+
 .mySwiper-3 .swiper-button-next:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 .mySwiper-3 .swiper-button-prev {
   background: #403847;
   border: 1px solid #4e4653;
   padding: 20px;
 }
+
 .mySwiper-3 .swiper-button-prev:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
- 
-.mySwiper-3 .swiper-button-prev{
+
+.mySwiper-3 .swiper-button-prev {
   margin-top: 183px;
   margin-left: 100px;
 }
-.mySwiper-3 .swiper-button-next{
+
+.mySwiper-3 .swiper-button-next {
   margin-top: 183px;
   margin-right: 100px;
 }
+
 @tailwind components;
 @tailwind utilities;
