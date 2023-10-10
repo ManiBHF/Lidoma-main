@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css"
+    />
+    <title>About Us</title>
+  </head>
+  <body class="bg-[#201728]">
+    <!-- HEADER SECTION -->
+    <section class="max-md:hidden">
+      <div class="">
+        <div class="">
+          <img
+            src="./assets/images/pattern (2).png"
+            width="50%"
+            class="absolute top-0 left-0 -z-10"
+          />
+          <img
+            src="./assets/images/pattern-r.png"
+            width="50%"
+            class="absolute top-0 right-0 -z-10"
+          />
+        </div>
+      </div>
+      <!-- CONTENT HEADER -->
+      <div class="container">
+        <div>
+          <nav class="flex justify-between items-center pt-[30px]">
+            <div>
+              <img src="./assets/images/3_white (3) 1.png" alt="" />
+            </div>
+            <div class="flex text-[#BCB9BE] text-lg">
+              <a class="mx-5 font-normal" href="#">Home</a>
+              <a class="mx-5 font-normal" href="#">Case Study</a>
+              <a class="mx-5 font-normal" href="#">Tournaments</a>
+              <a class="mx-5 font-normal" href="#">About</a>
+            </div>
+            <div class="h-24 w-50 flex justify-end">
+              <a href="#" class="mt-8">
+                <div
+                  class="bg-btn-tr bg-no-repeat lg:w-[161px] lg:h-[55px] font-medium text-[18px] text-white py-[12px] px-[26px]"
+                >
+                  Contact us
+                </div>
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="mt-24 w-full flex">
+          <div class="w-2/4">
+            <p class="font-normal text-lg text-[#8F8B93] mb-4">
+              Home / Aboutus
+            </p>
+            <h2 class="font-black text-[32px] text-white">Overview</h2>
+            <p class="lg:w-[570px] font-normal text-lg text-[#8F8B93] mt-7">
+              Lidoma Vision Esports, a UAE-based International Gaming & Esports
+              Solutions Company established in 2020, is on a mission to
+              revolutionize the global gaming community and ecosystem. Driven by
+              a dedicated and passionate team of gaming aficionados, we traverse
+              the dynamic terrains of the global gaming realm. Lidoma embodies a
+              simple yet profound mantra: Inspire the World to Play, Earn, and
+              Enjoy. Through our efforts, we bring together communities, conduct
+              top-tier tournaments and leagues, and air both online and offline
+              events, all while presenting an all-encompassing platform filled
+              with rich services for our esteemed partners and community.
+            </p>
+
+            <h2 class="font-black text-[32px] text-white mt-10">
+              Our Stellar Services Include:
+            </h2>
+            <p class="text-[#BCB9BE] font-normal text-lg leading-7">
+              LIDOMA, with its mission to bolster the gaming industry,
+              has commenced its operations to host a variety of
+              equitable tournaments. Play not just for the thrill, but
+              also for the camaraderie
+              <span
+                class="hidden text-[#BCB9BE] font-normal text-lg more-text"
+              >
+                and spirit of competition
+              </span>
+              <button
+                class="text-[#FF9500] focus:outline-none toggle-btn"
+              >
+                Read More
+              </button>
+              <button
+                class="hidden text-[#BCB9BE] focus:outline-none hide-btn"
+              >
+                Hide
+              </button>
+            </p>
+          </div>
+          <div class="w-2/4">
+            <img src="./assets/images/about us.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MOBILE RESPONSIVE-HEADER  -->
+    <div class="lg:hidden -mb-[260px]">
+      <img src="./assets/images/pattern-mb.png" class="absolute" />
+      <div class="container px-6">
+        <div class="flex flex-col h-auto w-full">
+          <div class="flex h-[100px]">
+            <div class="mt-6">
+              <img
+                src="./assets/images/3_white (3) 1.png"
+                width="99px"
+                height="29px"
+              />
+            </div>
+            <div
+              class="sm:hidden flex flex-col z-20 mx-auto h-[862px] justify-center"
+              x-data="{open: false}"
+            >
+              <nav
+                class="absolute inset-0 z-50 transform lg:transform-none w-full lg:opacity-100 duration-200 lg:relative text-white h-[630px] bg-black translate-x-0 mr-4 rounded-br-[50px]"
+                :class="{'translate-x-0 ease-in opacity-100':open === true, '-translate-x-full ease-out opacity-0': open === false}"
+              >
+                <button class="absolute top-8 right-6" @click="open = false">
+                  <svg
+                    width="26"
+                    height="21"
+                    viewBox="0 0 26 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26 21H19.2621L12.7906 13.0568L6.31918 21H0L9.23133 10.1696L0.590044 0H7.09956L13.0952 7.5554L18.9766 0H25.3338L16.5974 10.4138L26 21Z"
+                      fill="white"
+                      fill-opacity="0.8"
+                    />
+                  </svg>
+                </button>
+                <ul class="mt-20">
+                  <li class="flex flex-col gap-[72px]">
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="33"
+                          height="34"
+                          viewBox="0 0 33 34"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.87496 15.4249L15.1749 1.25C16.4281 1.25 17.6299 1.74781 18.516 2.63391C19.4021 3.52002 19.8999 4.72183 19.8999 5.97497V12.2749H28.8143C29.2709 12.2698 29.7232 12.3639 30.1398 12.5509C30.5564 12.7379 30.9274 13.0132 31.227 13.3578C31.5266 13.7023 31.7478 14.1079 31.8751 14.5465C32.0024 14.985 32.0329 15.446 31.9643 15.8974L29.7908 30.0723C29.6769 30.8235 29.2954 31.5081 28.7165 32.0001C28.1377 32.4922 27.4005 32.7584 26.6409 32.7498H8.87496M8.87496 15.4249V32.7498M8.87496 15.4249H4.14998C3.31456 15.4249 2.51334 15.7568 1.92261 16.3475C1.33187 16.9383 1 17.7395 1 18.5749V29.5998C1 30.4353 1.33187 31.2365 1.92261 31.8272C2.51334 32.418 3.31456 32.7498 4.14998 32.7498H8.87496"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >SOCIAL MEDIAS</a
+                    >
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="36"
+                          height="32"
+                          viewBox="0 0 36 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 1H11C12.7681 1 14.4638 1.70238 15.714 2.95262C16.9643 4.20286 17.6667 5.89856 17.6667 7.66667V31C17.6667 29.6739 17.1399 28.4021 16.2022 27.4645C15.2645 26.5268 13.9927 26 12.6667 26H1V1Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M34.3332 1H24.3332C22.5651 1 20.8694 1.70238 19.6191 2.95262C18.3689 4.20286 17.6665 5.89856 17.6665 7.66667V31C17.6665 29.6739 18.1933 28.4021 19.131 27.4645C20.0687 26.5268 21.3404 26 22.6665 26H34.3332V1Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >TOURNAMENTS</a
+                    >
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="28"
+                          height="34"
+                          viewBox="0 0 28 34"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 29C1 27.9391 1.42143 26.9217 2.17157 26.1716C2.92172 25.4214 3.93913 25 5 25H26.6"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M5 1H26.6V33H5C3.93913 33 2.92172 32.5786 2.17157 31.8284C1.42143 31.0783 1 30.0609 1 29V5C1 3.93913 1.42143 2.92172 2.17157 2.17157C2.92172 1.42143 3.93913 1 5 1Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >CASE STUDY</a
+                    >
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="33"
+                          height="31"
+                          viewBox="0 0 33 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.6665 13.8872L15.4998 18.7205L31.6109 2.60938"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M30 15.5V26.7778C30 27.6324 29.6605 28.4519 29.0562 29.0562C28.4519 29.6605 27.6324 30 26.7778 30H4.22222C3.36764 30 2.54805 29.6605 1.94377 29.0562C1.33948 28.4519 1 27.6324 1 26.7778V4.22222C1 3.36764 1.33948 2.54805 1.94377 1.94377C2.54805 1.33948 3.36764 1 4.22222 1H21.9444"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >GAMING TOURNAMENT REGISTRATION FORM</a
+                    >
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="31"
+                          height="31"
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.2803 11.1526C11.6212 10.1835 12.294 9.36634 13.1797 8.84583C14.0654 8.32531 15.1067 8.13504 16.1192 8.30872C17.1317 8.48239 18.0501 9.00879 18.7116 9.7947C19.3732 10.5806 19.7353 11.5753 19.7338 12.6026C19.7338 15.5026 15.3838 16.9526 15.3838 16.9526"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15.5 22.75H15.5145"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >FAQ</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div
+                class="fixed inset-0 w-full h-full bg-gray-900/70 backdrop-blur-sm z-20"
+                @click.prevent="open = false"
+                x-show="open"
+                x-cloak
+              ></div>
+              <button
+                class="navbar-burger absolute top-4 right-4 z-20 bg-gradient-to-r from-[#FF4000] to-[#FF9500] w-[51px] h-[44px] pl-2"
+                @click="open = true"
+              >
+                <svg
+                  width="31"
+                  height="24"
+                  viewBox="0 0 41 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M38.9033 11.8398H2.41602"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M38.9033 2H2.41602"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M38.9033 21.6797H2.41602"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M38.9033 31.5195H2.41602"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col mt-3">
+            <div class="container">
+              <div class="w-full flex max-md:flex-col mb-96">
+                <div class="w-[330px] h-[230px]">
+                  <img
+                    src="./assets/images/about us.png"
+                    width="330px"
+                    height="230px"
+                  />
+                </div>
+                <div class="w-full mt-10 text-center">
+                  <p class="font-normal text-lg text-[#8F8B93] mb-4">
+                    Home / Aboutus
+                  </p>
+                  <h2 class="font-black text-[22px] text-white">
+                    Read more about Lidoma
+                  </h2>
+                  <p
+                    class="lg:w-[570px] font-normal text-[13px] text-[#8F8B93] mt-7"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been Lorem Ipsum is
+                    simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.
+                  </p>
+                  <p
+                    class="lg:w-[570px] font-normal text-[13px] text-[#8F8B93] mt-5"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been Lorem Ipsum is
+                    simply dummy text of the printing and typesetting industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="mt-60 relative pb-12">
+      <div class="container w-full">
+        <div class="mb-2 relative">
+          <div
+            class="absolute top-2 lg:top-0 md:top-3 left-0 right-0 flex justify-center"
+          >
+            <svg
+              class="w-full h-full md:hidden"
+              viewBox="0 0 315 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 5.05923H28.1343L33.1935 0H45.5331L48.7414 9.99506L56.1451 5.05923H88.3317L108.075 34.7384H206.802L226.545 5.05923H257.878L262.813 10.1185H271.945L277.004 0.123396L281.57 5.05923H315V52H0V5.05923Z"
+                fill="#2F2737"
+              />
+            </svg>
+            <svg
+              class="w-full h-full md:block hidden"
+              viewBox="0 0 1520 141"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 20.5H114L134.5 0H184.5L197.5 40.5L227.5 20.5H520L600 120.5H919L999 20.5H1207L1227 41H1264L1284.5 0.5L1303 20.5H1519.5V140.5H0V20.5Z"
+                fill="#2F2737"
+              />
+            </svg>
+          </div>
+          <div class="w-full flex items-center justify-center">
+            <img
+              src="./assets/images/3_white-foot.png"
+              class="xl:w-auto lg:w-56 md:w-44 sm:w-52 w-28"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-12 py-20 px-5 gap-6 bg-[#2F2737]">
+          <div class="md:col-span-6 col-span-12">
+            <p class="font-black lg:text-[32px] max-md:text-lg text-white mb-4">
+              About Lidoma
+            </p>
+            <p class="font-normal lg:text-lg max-md:text-[13px] text-[#BCB9BE]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae
+              congue mauris rhoncus aenean vel elit scelerisque. In egestas erat
+              imperdiet sed euismod nisi porta lorem mollis. Morbi tristique
+              senectus et netus. Mattis pellentesque id nibh tortor id aliquet
+              lectus proin....
+            </p>
+          </div>
+          <div class="xl:col-span-2 md:col-span-3 col-span-6">
+            <h2 class="font-black lg:text-2xl text-white mb-6">Links</h2>
+            <ul>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Home</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Weblog</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">PUBG PC</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">FF 4v4</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Case Study</a>
+              </li>
+            </ul>
+          </div>
+          <div class="xl:col-span-2 md:col-span-3 col-span-6">
+            <h2 class="font-black lg:text-2xl text-white mb-6">Links</h2>
+            <ul>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Home</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Weblog</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">PUBG PC</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">FF 4v4</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Case Study</a>
+              </li>
+            </ul>
+          </div>
+          <div class="xl:col-span-2 md:col-span-3 col-span-6">
+            <h2 class="font-black lg:text-2xl text-white mb-6">Links</h2>
+            <ul>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Home</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Weblog</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">PUBG PC</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">FF 4v4</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Case Study</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/images/footer-l.png"
+        width="50%"
+        class="absolute left-0 bottom-0 -z-10 max-md:hidden"
+      />
+      <img
+        src="./assets/images/footer-r.png"
+        width="50%"
+        class="absolute right-0 bottom-0 -z-10 max-md:hidden"
+      />
+      <img
+        src="./assets/images/pattern-foo-mb.png"
+        class="absolute right-0 bottom-0 -z-10 lg:hidden"
+      />
+    </footer>
+    <!-- ----------------------------- -->
+    <script src="./assets/js/raw.js"></script>
+
+    <script src="./assets/js/alpine.js"></script>
+    <script>
+      class SlideManager {
+        constructor(slideElement) {
+          this.slideElement = slideElement;
+          this.moreTextElement = slideElement.querySelector(".more-text");
+          this.toggleBtn = slideElement.querySelector(".toggle-btn");
+          this.hideBtn = slideElement.querySelector(".hide-btn");
+
+          this.toggleBtn.addEventListener("click", () => this.showMoreText());
+          this.hideBtn.addEventListener("click", () => this.hideText());
+        }
+
+        showMoreText() {
+          this.moreTextElement.classList.remove("hidden");
+          this.toggleBtn.classList.add("hidden");
+          this.hideBtn.classList.remove("hidden");
+        }
+
+        hideText() {
+          this.moreTextElement.classList.add("hidden");
+          this.toggleBtn.classList.remove("hidden");
+          this.hideBtn.classList.add("hidden");
+        }
+      }
+
+
+    </script>
+  </body>
+</html>
