@@ -7,10 +7,19 @@
   display: none;
 }
 
-.tabs button:focus {
-  color: white;
-  background: linear-gradient(to right, #ff4000, #ff9500);
+
+.open-box {
+  width: 150px;
+  height: 150px;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+
+
+
 
 .tab-content .active {
   display: flex;
@@ -126,13 +135,25 @@
 }
 
 .mySwiper-cs .swiper-button-next {
-  margin-top: -125px;
+  margin-top: -98px;
 }
 .mySwiper-cs .swiper-button-prev {
-  margin-top: -125px;
+  margin-top: -98px;
   margin-left: 790px;
 }
+@media screen and (max-width: 768px) {
+  .mySwiper-cs .swiper-button-next {
+    margin-top: 29px;
+    margin-right: 75px;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .mySwiper-cs .swiper-button-prev {
+    margin-top: 29px;
+    margin-left: 75px;
+  }
+}
 .mySwiper-cs .swiper-button-next {
   border: 1px solid #4e4653;
   padding: 20px;
@@ -411,6 +432,49 @@ ul li i:after {
   left: auto;
   border: 1px solid #4e4653;
   padding: 20px;
+}
+
+.inactive-button{
+  filter: grayscale();
+}
+.active-button{
+  filter: none;
+}
+
+.registerSwiper .swiper-slide {
+  height: 347px;
+}
+.registerSwiper .swiper-button-next {
+  border: 1px solid #675C6E;
+  width: 40px;
+  height: 40px;
+  background-color: #403847;
+}
+.registerSwiper :is(.swiper-button-next, .swiper-button-prev) {
+  border: 1px solid #675C6E;
+  width: 40px;
+  height: 40px;
+  background-color: #403847;
+}
+.registerSwiper .swiper-button-prev{
+  left: 0;
+  top: 35%;
+}
+.registerSwiper .swiper-button-next{
+  right: 0;
+  top: 35%;
+}
+.registerSwiper .swiper-button-prev:hover {
+  background: linear-gradient(to right, #ff4000, #ff9500);
+}
+
+.registerSwiper .swiper-button-next:hover {
+  background: linear-gradient(to right, #ff4000, #ff9500);
+}
+@media only screen and (width >=768px) {
+  .swiper-btn :is(.swiper-button-next, .swiper-button-prev, .swiper-pagination){
+    display: none;
+  } 
 }
 @tailwind components;
 @tailwind utilities;

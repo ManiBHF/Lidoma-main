@@ -1,0 +1,3251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#201728]">
+    <!-- HEADER SECTION -->
+    <div class="">
+      <img
+        src="./assets/images/pattern (2).png"
+        width="50%"
+        class="absolute top-0 left-0 -z-10"
+      />
+      <img
+        src="./assets/images/pattern-r.png"
+        width="50%"
+        class="absolute top-0 right-0 -z-10"
+      />
+    </div>
+    <div class="container">
+      <!-- HEADER -->
+      <nav class="flex justify-between items-center pt-[30px] max-md:hidden">
+        <img src="./assets/images/3_white (3) 1.png" alt="" />
+        <div class="flex text-[#BCB9BE] text-lg">
+          <a class="mx-5 font-normal" href="#">Home</a>
+          <a class="mx-5 font-normal" href="#">Case Study</a>
+          <a class="mx-5 font-normal" href="#">Tournaments</a>
+          <a class="mx-5 font-normal" href="#">About</a>
+        </div>
+        <div class="h-24 w-50 flex justify-end">
+          <a href="#" class="mt-8">
+            <div
+              class="bg-btn-tr bg-no-repeat lg:w-[161px] lg:h-[55px] font-medium text-[18px] text-white py-[12px] px-[26px]"
+            >
+              Contact us
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <!-- MOBILE RESPONSIVE-HEADER  -->
+    <div class="lg:hidden">
+      <img src="./assets/images/pattern-mb.png" class="absolute" />
+      <div class="container px-6">
+        <div class="flex flex-col h-auto w-full">
+          <div class="flex h-[100px]">
+            <div class="mt-6">
+              <img
+                src="./assets/images/3_white (3) 1.png"
+                width="99px"
+                height="29px"
+              />
+            </div>
+            <div
+              class="sm:hidden flex flex-col z-20 mx-auto h-[862px] justify-center"
+              x-data="{open: false}"
+            >
+              <nav
+                class="absolute inset-0 z-50 transform lg:transform-none w-full lg:opacity-100 duration-200 lg:relative text-white h-[630px] bg-black translate-x-0 mr-4 rounded-br-[50px]"
+                :class="{'translate-x-0 ease-in opacity-100':open === true, '-translate-x-full ease-out opacity-0': open === false}"
+              >
+                <button class="absolute top-8 right-6" @click="open = false">
+                  <svg
+                    width="26"
+                    height="21"
+                    viewBox="0 0 26 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26 21H19.2621L12.7906 13.0568L6.31918 21H0L9.23133 10.1696L0.590044 0H7.09956L13.0952 7.5554L18.9766 0H25.3338L16.5974 10.4138L26 21Z"
+                      fill="white"
+                      fill-opacity="0.8"
+                    />
+                  </svg>
+                </button>
+                <ul class="mt-20">
+                  <li class="flex flex-col gap-[72px]">
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="33"
+                          height="34"
+                          viewBox="0 0 33 34"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.87496 15.4249L15.1749 1.25C16.4281 1.25 17.6299 1.74781 18.516 2.63391C19.4021 3.52002 19.8999 4.72183 19.8999 5.97497V12.2749H28.8143C29.2709 12.2698 29.7232 12.3639 30.1398 12.5509C30.5564 12.7379 30.9274 13.0132 31.227 13.3578C31.5266 13.7023 31.7478 14.1079 31.8751 14.5465C32.0024 14.985 32.0329 15.446 31.9643 15.8974L29.7908 30.0723C29.6769 30.8235 29.2954 31.5081 28.7165 32.0001C28.1377 32.4922 27.4005 32.7584 26.6409 32.7498H8.87496M8.87496 15.4249V32.7498M8.87496 15.4249H4.14998C3.31456 15.4249 2.51334 15.7568 1.92261 16.3475C1.33187 16.9383 1 17.7395 1 18.5749V29.5998C1 30.4353 1.33187 31.2365 1.92261 31.8272C2.51334 32.418 3.31456 32.7498 4.14998 32.7498H8.87496"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >SOCIAL MEDIAS</a
+                    >
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="36"
+                          height="32"
+                          viewBox="0 0 36 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 1H11C12.7681 1 14.4638 1.70238 15.714 2.95262C16.9643 4.20286 17.6667 5.89856 17.6667 7.66667V31C17.6667 29.6739 17.1399 28.4021 16.2022 27.4645C15.2645 26.5268 13.9927 26 12.6667 26H1V1Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M34.3332 1H24.3332C22.5651 1 20.8694 1.70238 19.6191 2.95262C18.3689 4.20286 17.6665 5.89856 17.6665 7.66667V31C17.6665 29.6739 18.1933 28.4021 19.131 27.4645C20.0687 26.5268 21.3404 26 22.6665 26H34.3332V1Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >TOURNAMENTS</a
+                    >
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="28"
+                          height="34"
+                          viewBox="0 0 28 34"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 29C1 27.9391 1.42143 26.9217 2.17157 26.1716C2.92172 25.4214 3.93913 25 5 25H26.6"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M5 1H26.6V33H5C3.93913 33 2.92172 32.5786 2.17157 31.8284C1.42143 31.0783 1 30.0609 1 29V5C1 3.93913 1.42143 2.92172 2.17157 2.17157C2.92172 1.42143 3.93913 1 5 1Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >CASE STUDY</a
+                    >
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="33"
+                          height="31"
+                          viewBox="0 0 33 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.6665 13.8872L15.4998 18.7205L31.6109 2.60938"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M30 15.5V26.7778C30 27.6324 29.6605 28.4519 29.0562 29.0562C28.4519 29.6605 27.6324 30 26.7778 30H4.22222C3.36764 30 2.54805 29.6605 1.94377 29.0562C1.33948 28.4519 1 27.6324 1 26.7778V4.22222C1 3.36764 1.33948 2.54805 1.94377 1.94377C2.54805 1.33948 3.36764 1 4.22222 1H21.9444"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >GAMING TOURNAMENT REGISTRATION FORM</a
+                    >
+                    <a
+                      href="#"
+                      class="px-5 rounded-md flex items-center gap-6 font-bold text-2xl"
+                      ><span
+                        ><svg
+                          width="31"
+                          height="31"
+                          viewBox="0 0 31 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.5 30C23.5081 30 30 23.5081 30 15.5C30 7.49187 23.5081 1 15.5 1C7.49187 1 1 7.49187 1 15.5C1 23.5081 7.49187 30 15.5 30Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.2803 11.1526C11.6212 10.1835 12.294 9.36634 13.1797 8.84583C14.0654 8.32531 15.1067 8.13504 16.1192 8.30872C17.1317 8.48239 18.0501 9.00879 18.7116 9.7947C19.3732 10.5806 19.7353 11.5753 19.7338 12.6026C19.7338 15.5026 15.3838 16.9526 15.3838 16.9526"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15.5 22.75H15.5145"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg> </span
+                      >FAQ</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div
+                class="fixed inset-0 w-full h-full bg-gray-900/70 backdrop-blur-sm z-20"
+                @click.prevent="open = false"
+                x-show="open"
+                x-cloak
+              ></div>
+              <button
+                class="navbar-burger absolute top-4 right-4 z-20 bg-gradient-to-r from-[#FF4000] to-[#FF9500] w-[51px] h-[44px] pl-2"
+                @click="open = true"
+              >
+                <svg
+                  width="31"
+                  height="24"
+                  viewBox="0 0 41 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M38.9033 11.8398H2.41602"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M38.9033 2H2.41602"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M38.9033 21.6797H2.41602"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M38.9033 31.5195H2.41602"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN -->
+    <div class="container flex flex-col mt-24">
+      <p class="font-normal text-lg text-[#8F8B93] mb-4">Home / CaseStudy</p>
+      <h2 class="font-black text-[32px] text-white">CaseStudy</h2>
+    </div>
+    <section class="container">
+      <div class="mt-14">
+        <div
+          class="grid justify-between gap-7 grid-cols-3 grid-rows-2 max-md:grid-cols-2 max-md:grid-rows-3"
+        >
+          <!-- Card -->
+          <div
+            class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+          >
+            <div class="p-4 flex flex-col lg:justify-between h-full">
+              <div>
+                <img src="./assets/images/Rectangle 745.png" />
+              </div>
+              <div class="mt-6 max-md:mt-10">
+                <h2 class="font-bold text-white text-[22px] max-md:text-[13px]">
+                  1- LIS
+                </h2>
+                <p
+                  class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+                >
+                  The adrenaline-pumping world of the Lidoma International
+                  Series (LIS), where PUBG MOBILE players from MENA, Europe, and
+                  Turkey battle it out in epic tournaments....
+                </p>
+                <button
+                  class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+                  data-modal="modal1"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+          >
+            <div class="p-4 flex flex-col lg:justify-between h-full">
+              <div>
+                <img src="./assets/images/Rectangle 745.png" />
+              </div>
+              <div class="mt-6 max-md:mt-10">
+                <h2 class="font-bold text-white text-[22px] max-md:text-[13px]">
+                  2- New State Summer Series
+                </h2>
+                <p
+                  class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+                >
+                  The New State Mobile Summer Series is a collaborative IP
+                  venture with Krafton aimed at empowering the gaming community
+                  in the EMEA region while raising awareness for the
+                  published....
+                </p>
+              </div>
+              <button
+                class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+                data-modal="modal2"
+              >
+                See more
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+          >
+            <div class="p-4 flex flex-col lg:justify-between h-full">
+              <div>
+                <img src="./assets/images/BATTLEGROUND INVITATIONAL -cover.png" class="mx-auto"/>
+              </div>
+              <div class="mt-6 max-md:mt-10">
+                <h2 class="font-bold text-white text-[22px] max-md:text-[13px]">
+                  3- PUBGM Documentary
+                </h2>
+                <p
+                  class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+                >
+                  This thrilling event features innovative content, including
+                  top influencers and talents, Making it a prime opportunity to
+                  connect with Generation Z.
+                </p>
+                <button
+                  class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+                  data-modal="modal3"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+          >
+            <div class="p-4 flex flex-col lg:justify-between h-full">
+              <div>
+                <img src="./assets/images/Rectangle 745.png" />
+              </div>
+              <div class="mt-6 max-md:mt-10">
+                <h2 class="font-bold text-white text-[22px] max-md:text-[13px]">
+                  4- New State Spring
+                </h2>
+                <p
+                  class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+                >
+                  The New State Mobile Spring Series is a collaborative IP
+                  venture with Krafton aimed at empowering the gaming community
+                  in the EMEA region while raising awareness for the
+                  published....
+                </p>
+                <button
+                  class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+                  data-modal="modal4"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+          >
+            <div
+              class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+            >
+              <div class="p-4 flex flex-col lg:justify-between h-full">
+                <div>
+                  <img src="./assets/images/Rectangle 745.png" />
+                </div>
+                <div class="mt-6 max-md:mt-10">
+                  <h2
+                    class="font-bold text-white text-[22px] max-md:text-[13px]"
+                  >
+                    5- Overwatch MENA
+                  </h2>
+                  <p
+                    class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+                  >
+                    Lidoma Overwatch 2.0 event is a community league featuring
+                    the more than 128 teams in Mena plus top tier teams in the
+                    region to provide a platform for gamers to play like pro.
+                  </p>
+                  <button
+                    class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+                    data-modal="modal5"
+                  >
+                    See more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+          >
+            <div
+              class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+            >
+              <div class="p-4 flex flex-col lg:justify-between h-full">
+                <div>
+                  <img src="./assets/images/Rectangle 745.png" />
+                </div>
+                <div class="mt-6 max-md:mt-10">
+                  <h2
+                    class="font-bold text-white text-[22px] max-md:text-[13px]"
+                  >
+                  6- Valorant Reborn                 
+                 </h2>
+                  <p
+                    class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+                  >
+                  Lidoma Valorant Reborn is a homegrown IP in the Turkish region designed for the Valorant community, providing opportunities for growth and the chance to win exciting prizes.
+                  </p>
+                  <button
+                    class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+                    data-modal="modal6"
+                  >
+                    See more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+          class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+        >
+          <div
+            class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+          >
+            <div class="p-4 flex flex-col lg:justify-between h-full">
+              <div>
+                <img src="./assets/images/Rectangle 745.png" />
+              </div>
+              <div class="mt-6 max-md:mt-10">
+                <h2
+                  class="font-bold text-white text-[22px] max-md:text-[13px]"
+                >
+                7- Drive By               
+              </h2>
+                <p
+                  class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+                >
+                Lidoma Drive-by is a Krafton-backed IP featuring both community and invited teams, and it's a multi-regional tournament that allows gamers to compete in PUBG on an international stage.                </p>
+                <button
+                  class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+                  data-modal="modal7"
+                >
+                  See more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+        class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+      >
+        <div
+          class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+        >
+          <div class="p-4 flex flex-col lg:justify-between h-full">
+            <div>
+              <img src="./assets/images/Pro-Series-cover.png" />
+            </div>
+            <div class="mt-6 max-md:mt-10">
+              <h2
+                class="font-bold text-white text-[22px] max-md:text-[13px]"
+              >
+              8- Freefire Pro Series            
+            </h2>
+              <p
+                class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+              >
+              The Pro-Series is an event tailored for Indian Free Fire players, generating excitement as the Garena game makes its return to India. This IP features a mixed tournament format, welcoming both community and....             <button
+                class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+                data-modal="modal8"
+              >
+                See more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+    >
+      <div
+        class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+      >
+        <div class="p-4 flex flex-col lg:justify-between h-full">
+          <div>
+            <img src="./assets/images/south-asia-cover.png" class="mx-auto"/>
+          </div>
+          <div class="mt-6 max-md:mt-10">
+            <h2
+              class="font-bold text-white text-[22px] max-md:text-[13px]"
+            >
+            9- South Asia Invitational  1-2-3          
+          </h2>
+            <p
+              class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+            >
+            The South Asia Invitational PUBG Mobile Series comprises a series of tournaments for both the South Asian region's community and top-tier teams. This event offers....         <button
+              class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+              data-modal="modal9"
+            >
+              See more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div
+      class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+    >
+      <div class="p-4 flex flex-col lg:justify-between h-full">
+        <div>
+          <img src="./assets/images/PRO-LEAGUE-cover.png" class="mx-auto"/>
+        </div>
+        <div class="mt-6 max-md:mt-10">
+          <h2
+            class="font-bold text-white text-[22px] max-md:text-[13px]"
+          >
+          10- FF Pro League 1-2-3-4        </h2>
+          <p
+            class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+          >
+          Lidoma Pro League is a series of events following the official Garena format, designed to offer a practice ground for Free Fire players and enhance their skills on the battlefield.         <button
+            class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+            data-modal="modal10"
+          >
+            See more
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Stars-Showdown-cover.png" width="243px" height="241px" class="mx-auto"/>
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        11- FF Stars Showdown       </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        Stars Showdown is dedicated to gamers, influencers, and YouTubers, bringing together a massive community to enhance their gaming skills and demonstrate what it takes to reach VIP status in a game.         <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal11"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/BATTLEGROUND INVITATIONAL -cover.png" class="mx-auto"/>
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        12- Battleground invitational     </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        With BGMI's return to India, this IP has been created to showcase the top 32 BGMI squads in the country, challenging them to put on a captivating show for their....        <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal12"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/SA VS SEA OPEN CHALLENGE-cover.png" width="270px" class="mx-auto"/>
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        13- SA Vs SEA Open Challenge     </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        Open Challenge is an IP designed to foster competition between South Asian and Southeast Asian countries, encouraging PUBG Mobile players to engage in thrilling....
+        <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal13"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/ASIA INVITATIONAL-cover.png" height="259px"/>
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        14- FF Asia Invitational S1-2-3-4     </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        The Asia Invitational is an IP established to provide an opportunity for FreeFire gamers from various Asian countries to compete....
+        <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal14"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        15- Regional Wars 1-2     </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        Regional War is an innovative tournament format where two countries compete head-to-head, selecting their top Free Fire teams to create an atmosphere reminiscent of football championships within the game.        <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal15"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        16- PUBG Grind    </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        Grind is an annual IP event that takes place before the PUBG Mobile Championship, offering PMPL teams the opportunity to practice and prepare for the main event....      <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal16"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        17- LIDOMA EMEA Invitational    </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        EMEA Invitational is a highly anticipated PUBG MOBILE event where the top 18 teams from each region engage in regional qualifiers. The best-performing teams....      <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal17"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        18- Xmas Dota2    </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        The Dota2 Xmas Event is an exciting Dota 2 tournament in the EMEA region, offering a platform for community teams to compete, enhance their skills, and prepare for official competitions.      <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal18"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        19- R6 MENA    </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        RainbowSix in MENA is one of the most anticipated Lidoma IPs, featuring both a community-driven aspect and a top-tier competitive scene. The event brings together teams from across MENA....      <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal19"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        20- R6 HUB   </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        a dynamic Discord server where players can join a queue and await the arrival of other participants. Our advanced bot intelligently detects and assembles groups....      <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal20"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        21- LIDOMA CODM   </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        Grind is an annual IP event that takes place before the PUBG Mobile Championship, offering PMPL teams the opportunity to practice and prepare for the main event....    <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal21"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        22- LIDOMA Minecraft   </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        Grind is an annual IP event that takes place before the PUBG Mobile Championship, offering PMPL teams the opportunity to practice and prepare for the main event....    <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal22"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        23- LIDOMA Mobile legends   </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        Grind is an annual IP event that takes place before the PUBG Mobile Championship, offering PMPL teams the opportunity to practice and prepare for the main event....    <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal23"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+>
+  <div
+    class="w-[362px] h-[550px] max-md:w-[155px] max-md:h-[410px] bg-[#524a58]"
+  >
+    <div class="p-4 flex flex-col lg:justify-between h-full">
+      <div>
+        <img src="./assets/images/Rectangle 745.png" />
+      </div>
+      <div class="mt-6 max-md:mt-10">
+        <h2
+          class="font-bold text-white text-[22px] max-md:text-[13px]"
+        >
+        24- LIDOMA Valorant  </h2>
+        <p
+          class="font-normal text-[18px] lg:leading-6 text-[#BCB9BE] mt-3 max-md:text-[11px]"
+        >
+        Grind is an annual IP event that takes place before the PUBG Mobile Championship, offering PMPL teams the opportunity to practice and prepare for the main event....    <button
+          class="open-btn border divide-solid border-white text-center w-full py-2 text-white mt-6 max-md:text-[13px]"
+          data-modal="modal24"
+        >
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+          <!-- Content Modal -->
+          <div
+            id="modal1"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    1- LIS EMEA REIGON
+                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/LIS1.png" />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  "The adrenaline-pumping world of the Lidoma International
+                  Series (LIS), where PUBG MOBILE players from MENA, Europe, and
+                  Turkey battle it out in epic tournaments. With over 2000
+                  players and top-tier invited teams, LIS boasts a massive reach
+                  and engagement. "
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 2280
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 180K
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 2.5M
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal2"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    2- New State Summer Series EMEA REIGON
+                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/NSM-SUMMER.png" />
+                    </div>
+                    <div class="h-16 w-full lg:hidden"></div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+                <p
+                  class="mt-5 font-normal lgtext-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  The New State Mobile Summer Series is a collaborative IP
+                  venture with Krafton aimed at empowering the gaming community
+                  in the EMEA region while raising awareness for the published
+                  game.
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 256
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 2K
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 130K
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal3"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    3- PUBGM Documentary MENA REIGON
+                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img
+                        src="./assets/images/BATTLEGROUND INVITATIONAL.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lgtext-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  This thrilling event features innovative content, including
+                  top influencers and talents, Making it a prime opportunity to
+                  connect with Generation Z.
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: CONTENT
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 2.3M
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 5M
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal4"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    4- New State Spring EMEA REIGON
+                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/NSM-SPRING.png" />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  The New State Mobile Spring Series is a collaborative IP
+                  venture with Krafton aimed at empowering the gaming community
+                  in the EMEA region while raising awareness for the published
+                  game.
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 256
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 2K
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 100K
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal5"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    5- Overwatch MENA REIGON
+                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/OVERWATCH MENA.png" />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  Lidoma Overwatch 2.0 event is a community league featuring the
+                  more than 128 teams in Mena plus top tier teams in the region
+                  to provide a platform for gamers to play like pro.
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 645
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 30K
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 500K
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal6"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    6- Valorant Reborn EMEA REIGON                 
+                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/VALORANT REBORN.png" />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                Lidoma Valorant Reborn is a homegrown IP in the Turkish region designed for the Valorant community, providing opportunities for growth and the chance to win exciting prizes.
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 108
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 10K
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 800K
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal7"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal7"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    7- Drive By EMEA REIGON                
+                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/DRIVE-BY.png" />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                Lidoma Drive-by is a Krafton-backed IP featuring both community and invited teams, and it's a multi-regional tournament that allows gamers to compete in PUBG on an international stage.                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 340
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 15K
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 500K
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal8"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal8"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    8- Freefire Pro Series ASIA REIGON                
+                   </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/PRO-SERIES.png" />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                The Pro-Series is an event tailored for Indian Free Fire players, generating excitement as the Garena game makes its return to India. This IP features a mixed tournament format, welcoming both community and invited teams to participate.                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 6780
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 530K
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 5M
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal9"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal9"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    9- South Asia Invitational  1-2-3 ASIA REIGON                 
+                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="swiper-slide">
+                      <img src="./assets/images/south-asia-1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/south-asia-2.png" />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                The South Asia Invitational PUBG Mobile Series comprises a series of tournaments for both the South Asian region's community and top-tier teams. This event offers participants the opportunity to test their skills and compete for a substantial prize pool.               <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 1300
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 1M
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 6M
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal10"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal10"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    10. FF Pro League 1-2-3-4 ASIA REIGON                  </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="swiper-slide">
+                      <img src="./assets/images/pl-1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/pl-2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/pl-3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/pl-4.png" />
+                    </div>
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                Lidoma Pro League is a series of events following the official Garena format, designed to offer a practice ground for Free Fire players and enhance their skills on the battlefield.               <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 12000
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 2.6M
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 12M
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal11"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal11"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    11- FF Stars Showdown ASIA REIGON             </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/STARS SHOWDOWN.png" />
+                    </div>
+                
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                Stars Showdown is dedicated to gamers, influencers, and YouTubers, bringing together a massive community to enhance their gaming skills and demonstrate what it takes to reach VIP status in a game.               <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 2090
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 255K
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 1.5M
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="modal12"
+            class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+          >
+            <!-- Modal content -->
+            <div
+              class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+            >
+              <button
+                class="absolute right-4 top-3 text-white close"
+                data-modal="modal12"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div class="px-7">
+                <div class="swiper mySwiper-cs">
+                  <p class="font-bold lg:text-[32px] text-white">
+                    12- Battleground invitational ASIA REIGON            </p>
+                  <div
+                    class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div
+                    class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                  ></div>
+                  <div class="swiper-wrapper mt-5">
+                    <div class="">
+                      <img src="./assets/images/BATTLEGROUND INVITATIONAL.png" />
+                    </div>
+                
+                  </div>
+                  <div class="h-16 w-full lg:hidden"></div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                With BGMI's return to India, this IP has been created to showcase the top 32 BGMI squads in the country, challenging them to put on a captivating show for their audience. This invitational event offers the chance to win astonishing prizes.               <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  NUMBER OF PLAYERS: 128
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  VIEWERSHIP: 1.8M
+                </p>
+                <p
+                  class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+                >
+                  IMPRESSION: 3M
+                </p>
+                <a
+                  class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                  href="#"
+                >
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <p class="text-white ml-2">Share</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+          id="modal13"
+          class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+        >
+          <!-- Modal content -->
+          <div
+            class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+          >
+            <button
+              class="absolute right-4 top-3 text-white close"
+              data-modal="modal13"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <div class="px-7">
+              <div class="swiper mySwiper-cs">
+                <p class="font-bold lg:text-[32px] text-white">
+                  13- SA Vs SEA Open Challenge ASIA REIGON           </p>
+                <div
+                  class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+                ></div>
+                <div
+                  class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+                ></div>
+                <div class="swiper-wrapper mt-5">
+                  <div class="">
+                    <img src="./assets/images/SA VS SEA OPEN CHALLENGE.png" />
+                  </div>
+              
+                </div>
+                <div class="h-16 w-full lg:hidden"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <p
+                class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+              >
+              Open Challenge is an IP designed to foster competition between South Asian and Southeast Asian countries, encouraging PUBG Mobile players to engage in thrilling battles. This event caters to both community-level and top-tier teams.
+               <p
+                class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+              >
+                NUMBER OF PLAYERS: 2200
+              </p>
+              <p
+                class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+              >
+                VIEWERSHIP: 1M
+              </p>
+              <p
+                class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+              >
+                IMPRESSION: 6M
+              </p>
+              <a
+                class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+                href="#"
+              >
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                    fill="white"
+                  />
+                </svg>
+                <p class="text-white ml-2">Share</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+        id="modal14"
+        class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+      >
+        <!-- Modal content -->
+        <div
+          class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+        >
+          <button
+            class="absolute right-4 top-3 text-white close"
+            data-modal="modal14"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <div class="px-7">
+            <div class="swiper mySwiper-cs">
+              <p class="font-bold lg:text-[32px] text-white">
+                14- FF Asia Invitational S1-2-3-4 ASIA REIGON           </p>
+              <div
+                class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+              ></div>
+              <div
+                class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+              ></div>
+              <div class="swiper-wrapper mt-5">
+                <div class="swiper-slide">
+                  <img src="./assets/images/asia-inv-1.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/asia-inv-2.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/asia-inv-3.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/asia-inv-4.png" />
+                </div>
+            
+              </div>
+              <div class="h-16 w-full lg:hidden"></div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <p
+              class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+            >
+            The Asia Invitational is an IP established to provide an opportunity for FreeFire gamers from various Asian countries to compete. Participants have a chance to earn a spot in the grand finale alongside top-tier teams, allowing them to test their skills at an international level.
+             <p
+              class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+            >
+              NUMBER OF PLAYERS: 9000
+            </p>
+            <p
+              class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+            >
+              VIEWERSHIP: 1.2M
+            </p>
+            <p
+              class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+            >
+              IMPRESSION: 4M
+            </p>
+            <a
+              class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+              href="#"
+            >
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                  fill="white"
+                />
+              </svg>
+              <p class="text-white ml-2">Share</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+      id="modal15"
+      class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+    >
+      <!-- Modal content -->
+      <div
+        class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+      >
+        <button
+          class="absolute right-4 top-3 text-white close"
+          data-modal="modal15"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div class="px-7">
+          <div class="swiper mySwiper-cs">
+            <p class="font-bold lg:text-[32px] text-white">
+              15- Regional Wars 1-2 ASIA REIGON         </p>
+            <div
+              class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+            ></div>
+            <div
+              class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+            ></div>
+            <div class="swiper-wrapper mt-5">
+              <div class="swiper-slide">
+                <img src="./assets/images/REGIONAL WARS-1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/REGIONAL WARS-2.png" />
+              </div>
+          
+          
+            </div>
+            <div class="h-16 w-full lg:hidden"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <p
+            class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+          >
+          Regional War is an innovative tournament format where two countries compete head-to-head, selecting their top Free Fire teams to create an atmosphere reminiscent of football championships within the game.           <p
+            class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+          >
+            NUMBER OF PLAYERS: 2500
+          </p>
+          <p
+            class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+          >
+            VIEWERSHIP: 700K
+          </p>
+          <p
+            class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+          >
+            IMPRESSION: 5M
+          </p>
+          <a
+            class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+            href="#"
+          >
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                fill="white"
+              />
+            </svg>
+            <p class="text-white ml-2">Share</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      id="modal16"
+      class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+    >
+      <!-- Modal content -->
+      <div
+        class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+      >
+        <button
+          class="absolute right-4 top-3 text-white close"
+          data-modal="modal16"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div class="px-7">
+          <div class="swiper mySwiper-cs">
+            <p class="font-bold lg:text-[32px] text-white">
+              16- PUBG Grind EMEA REIGON EMEA REIGON         </p>
+            <div
+              class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+            ></div>
+            <div
+              class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+            ></div>
+            <div class="swiper-wrapper mt-5">
+              <div class="">
+                <img src="./assets/images/GRIND.png" />
+              </div>
+            
+          
+          
+            </div>
+            <div class="h-16 w-full lg:hidden"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <p
+            class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+          >
+          Grind is an annual IP event that takes place before the PUBG Mobile Championship, offering PMPL teams the opportunity to practice and prepare for the main event. It's an exclusive practice platform for all the top-tier teams from the EMEA region.           <p
+            class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+          >
+            NUMBER OF PLAYERS: 320
+          </p>
+          <p
+            class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+          >
+            VIEWERSHIP: 80K
+          </p>
+          <p
+            class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+          >
+            IMPRESSION: 900K
+          </p>
+          <a
+            class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+            href="#"
+          >
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+                fill="white"
+              />
+            </svg>
+            <p class="text-white ml-2">Share</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+    id="modal17"
+    class="modal hidden fixed z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+  >
+    <!-- Modal content -->
+    <div
+      class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+    >
+      <button
+        class="absolute right-4 top-3 text-white close"
+        data-modal="modal17"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <div class="px-7">
+        <div class="swiper mySwiper-cs">
+          <p class="font-bold lg:text-[32px] text-white">
+            17- LIDOMA EMEA Invitational         </p>
+          <div
+            class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+          ></div>
+          <div
+            class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+          ></div>
+          <div class="swiper-wrapper mt-5">
+            <div class="">
+              <img src="./assets/images/EMEA INV TWIST.png" />
+            </div>
+          
+        
+        
+          </div>
+          <div class="h-16 w-full lg:hidden"></div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <p
+          class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+        >
+        EMEA Invitational is a highly anticipated PUBG MOBILE event where the top 18 teams from each region engage in regional qualifiers. The best-performing teams advance to a mixed final, vying for the prestigious title of "Champion of All Regions."           <p
+          class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+        >
+          NUMBER OF PLAYERS: 160
+        </p>
+        <p
+          class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+        >
+          VIEWERSHIP: 60K
+        </p>
+        <p
+          class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+        >
+          IMPRESSION: 700K
+        </p>
+        <a
+          class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+          href="#"
+        >
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+              fill="white"
+            />
+          </svg>
+          <p class="text-white ml-2">Share</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+  id="modal18"
+  class="modal hidden fixed inset-0 z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+>
+  <!-- Modal content -->
+  <div
+    class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+  >
+    <button
+      class="absolute right-4 top-3 text-white close"
+      data-modal="modal18"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+    <div class="px-7">
+      <div class="swiper mySwiper-cs">
+        <p class="font-bold lg:text-[32px] text-white">
+          18- Xmas Dota2 EMEA REIGON         </p>
+        <div
+          class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+        ></div>
+        <div
+          class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+        ></div>
+        <div class="swiper-wrapper mt-5">
+          <div class="">
+            <img src="./assets/images/XMAS DOTA2.png" />
+          </div>
+        
+      
+      
+        </div>
+        <div class="h-16 w-full lg:hidden"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <p
+        class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+      >
+      The Dota2 Xmas Event is an exciting Dota 2 tournament in the EMEA region, offering a platform for community teams to compete, enhance their skills, and prepare for official competitions.           <p
+        class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+      >
+        NUMBER OF PLAYERS: 160
+      </p>
+      <p
+        class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+      >
+        VIEWERSHIP: 60K
+      </p>
+      <p
+        class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+      >
+        IMPRESSION: 700K
+      </p>
+      <a
+        class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+        href="#"
+      >
+        <svg
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+            fill="white"
+          />
+        </svg>
+        <p class="text-white ml-2">Share</p>
+      </a>
+    </div>
+  </div>
+</div>
+<div
+id="modal19"
+class="modal hidden fixed inset-0 z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+>
+<!-- Modal content -->
+<div
+  class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+>
+  <button
+    class="absolute right-4 top-3 text-white close"
+    data-modal="modal19"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+  <div class="px-7">
+    <div class="swiper mySwiper-cs">
+      <p class="font-bold lg:text-[32px] text-white">
+        19- R6 MENA         </p>
+      <div
+        class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+      ></div>
+      <div
+        class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+      ></div>
+      <div class="swiper-wrapper mt-5">
+        <div class="">
+          <img src="./assets/images/R6 MENA.png" />
+        </div>
+      
+    
+    
+      </div>
+      <div class="h-16 w-full lg:hidden"></div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+    RainbowSix in MENA is one of the most anticipated Lidoma IPs, featuring both a community-driven aspect and a top-tier competitive scene. The event brings together teams from across MENA countries, reigniting old rivalries and giving them the chance to prove themselves and claim the championship title.           <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+      NUMBER OF PLAYERS: 160
+    </p>
+    <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+      VIEWERSHIP: 60K
+    </p>
+    <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+      IMPRESSION: 700K
+    </p>
+    <a
+      class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+      href="#"
+    >
+      <svg
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+          fill="white"
+        />
+      </svg>
+      <p class="text-white ml-2">Share</p>
+    </a>
+  </div>
+</div>
+</div>
+<div
+id="modal20"
+class="modal hidden fixed inset-0 z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+>
+<!-- Modal content -->
+<div
+  class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+>
+  <button
+    class="absolute right-4 top-3 text-white close"
+    data-modal="modal20"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+  <div class="px-7">
+    <div class="swiper mySwiper-cs">
+      <p class="font-bold lg:text-[32px] text-white">
+        20- R6 HUB MENA         </p>
+      <div
+        class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+      ></div>
+      <div
+        class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+      ></div>
+      <div class="swiper-wrapper mt-5">
+        <div class="">
+          <img src="./assets/images/R6 HUB.png" />
+        </div>
+      
+    
+    
+      </div>
+      <div class="h-16 w-full lg:hidden"></div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+    a dynamic Discord server where players can join a queue and await the arrival of other participants. Our advanced bot intelligently detects and assembles groups of ten players, creating lobbies for exciting matches. After each match, the results are automatically processed and added to our leaderboard, showcasing the top players of each season. With a thriving community of over 2000 users in the MENA region alone, we also offer comprehensive admin panels and various other features to enhance the user experience.           <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+      NUMBER OF PLAYERS: 2000
+    </p>
+
+    <a
+      class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+      href="#"
+    >
+      <svg
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+          fill="white"
+        />
+      </svg>
+      <p class="text-white ml-2">Share</p>
+    </a>
+  </div>
+</div>
+</div>
+<div
+id="modal21"
+class="modal hidden fixed inset-0 z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+>
+<!-- Modal content -->
+<div
+  class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+>
+  <button
+    class="absolute right-4 top-3 text-white close"
+    data-modal="modal21"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+  <div class="px-7">
+    <div class="swiper mySwiper-cs">
+      <p class="font-bold lg:text-[32px] text-white">
+        21- LIDOMA CODM EMEA REIGON       </p>
+      <div
+        class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+      ></div>
+      <div
+        class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+      ></div>
+      <div class="swiper-wrapper mt-5">
+        <div class="">
+          <img src="./assets/images/CODM XMAS.png" />
+        </div>
+      
+    
+    
+      </div>
+      <div class="h-16 w-full lg:hidden"></div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+    a dynamic Discord server where players can join a queue and await the arrival of other participants. Our advanced bot intelligently detects and assembles groups of ten players, creating lobbies for exciting matches. After each match, the results are automatically processed and added to our leaderboard, showcasing the top players of each season. With a thriving community of over 2000 users in the MENA region alone, we also offer comprehensive admin panels and various other features to enhance the user experience.           <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+      NUMBER OF PLAYERS: 2000
+    </p>
+
+    <a
+      class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+      href="#"
+    >
+      <svg
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+          fill="white"
+        />
+      </svg>
+      <p class="text-white ml-2">Share</p>
+    </a>
+  </div>
+</div>
+</div>
+<div
+id="modal22"
+class="modal hidden fixed inset-0 z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+>
+<!-- Modal content -->
+<div
+  class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+>
+  <button
+    class="absolute right-4 top-3 text-white close"
+    data-modal="modal22"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+  <div class="px-7">
+    <div class="swiper mySwiper-cs">
+      <p class="font-bold lg:text-[32px] text-white">
+        22- LIDOMA Minecraft EMEA REIGON       </p>
+      <div
+        class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+      ></div>
+      <div
+        class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+      ></div>
+      <div class="swiper-wrapper mt-5">
+        <div class="">
+          <img src="./assets/images/MINECRAFT.png" />
+        </div>
+      
+    
+    
+      </div>
+      <div class="h-16 w-full lg:hidden"></div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+    a dynamic Discord server where players can join a queue and await the arrival of other participants. Our advanced bot intelligently detects and assembles groups of ten players, creating lobbies for exciting matches. After each match, the results are automatically processed and added to our leaderboard, showcasing the top players of each season. With a thriving community of over 2000 users in the MENA region alone, we also offer comprehensive admin panels and various other features to enhance the user experience.           <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+      NUMBER OF PLAYERS: 2000
+    </p>
+
+    <a
+      class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+      href="#"
+    >
+      <svg
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+          fill="white"
+        />
+      </svg>
+      <p class="text-white ml-2">Share</p>
+    </a>
+  </div>
+</div>
+</div>
+<div
+id="modal23"
+class="modal hidden fixed inset-0 z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+>
+<!-- Modal content -->
+<div
+  class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+>
+  <button
+    class="absolute right-4 top-3 text-white close"
+    data-modal="modal23"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+  <div class="px-7">
+    <div class="swiper mySwiper-cs">
+      <p class="font-bold lg:text-[32px] text-white">
+        23- LIDOMA Mobile legends EMEA REIGON      </p>
+      <div
+        class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+      ></div>
+      <div
+        class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+      ></div>
+      <div class="swiper-wrapper mt-5">
+        <div class="">
+          <img src="./assets/images/MOBILE LEGENDS.png" />
+        </div>
+      
+    
+    
+      </div>
+      <div class="h-16 w-full lg:hidden"></div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+    a dynamic Discord server where players can join a queue and await the arrival of other participants. Our advanced bot intelligently detects and assembles groups of ten players, creating lobbies for exciting matches. After each match, the results are automatically processed and added to our leaderboard, showcasing the top players of each season. With a thriving community of over 2000 users in the MENA region alone, we also offer comprehensive admin panels and various other features to enhance the user experience.           <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+      NUMBER OF PLAYERS: 2000
+    </p>
+
+    <a
+      class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+      href="#"
+    >
+      <svg
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+          fill="white"
+        />
+      </svg>
+      <p class="text-white ml-2">Share</p>
+    </a>
+  </div>
+</div>
+</div>
+<div
+id="modal24"
+class="modal hidden fixed inset-0 max-md:inset-0 z-10 pt-[100px] left-0 top-0 w-full h-full overflow-auto backdrop-blur-sm bg-black/30"
+>
+<!-- Modal content -->
+<div
+  class="modal-content bg-[#403847] lg:h-[550px] p-5 mx-auto lg:mt-[10px] lg:w-[1000px] max-md:h-[680px] relative"
+>
+  <button
+    class="absolute right-4 top-3 text-white close"
+    data-modal="modal24"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+  <div class="px-7">
+    <div class="swiper mySwiper-cs">
+      <p class="font-bold lg:text-[32px] text-white">
+        24- LIDOMA Valorant EMEA REIGON     </p>
+      <div
+        class="left-0 flex justify-center bg-gradient-to-r from-[#403847] from-20% h-[203px] top-[68px] w-12 pr-12 pointer-events-none absolute z-30"
+      ></div>
+      <div
+        class="right-0 flex justify-center bg-gradient-to-l from-[#403847] from-20% h-[203px] top-[68px] w-12 pl-12 pointer-events-none absolute z-30"
+      ></div>
+      <div class="swiper-wrapper mt-5">
+        <div class="swiper-slide">
+          <img src="./assets/images/VALORANT REBORN.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/VALORANT.png" />
+        </div>
+      </div>
+      <div class="h-16 w-full lg:hidden"></div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+    a dynamic Discord server where players can join a queue and await the arrival of other participants. Our advanced bot intelligently detects and assembles groups of ten players, creating lobbies for exciting matches. After each match, the results are automatically processed and added to our leaderboard, showcasing the top players of each season. With a thriving community of over 2000 users in the MENA region alone, we also offer comprehensive admin panels and various other features to enhance the user experience.           <p
+      class="mt-5 font-normal lg:text-[18px] text-[#BCB9BE] max-md:text-[13px]"
+    >
+      NUMBER OF PLAYERS: 2000
+    </p>
+
+    <a
+      class="flex lg:w-[141px] lg:h-[58px] border divide-solid border-white mt-5 items-center justify-center"
+      href="#"
+    >
+      <svg
+        width="26"
+        height="26"
+        viewBox="0 0 26 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.875 16.25C17.333 16.2498 16.7965 16.3584 16.2972 16.5693C15.7979 16.7803 15.346 17.0892 14.9683 17.4779L10.2862 14.4686C10.6545 13.5242 10.6545 12.4759 10.2862 11.5314L14.9683 8.52213C15.6716 9.24253 16.6173 9.67614 17.6221 9.73888C18.6269 9.80162 19.6192 9.48902 20.4066 8.8617C21.1941 8.23438 21.7205 7.33702 21.8839 6.3436C22.0473 5.35018 21.836 4.33148 21.291 3.485C20.746 2.63852 19.906 2.02457 18.9341 1.76218C17.9621 1.49978 16.9273 1.60764 16.0304 2.06484C15.1334 2.52204 14.4381 3.29601 14.0794 4.23669C13.7207 5.17737 13.724 6.21775 14.0887 7.15611L9.40672 10.1654C8.84291 9.58658 8.1193 9.18903 7.32838 9.02359C6.53747 8.85814 5.71518 8.93231 4.96663 9.23662C4.21809 9.54093 3.5773 10.0615 3.12617 10.7319C2.67505 11.4023 2.43408 12.192 2.43408 13C2.43408 13.8081 2.67505 14.5977 3.12617 15.2681C3.5773 15.9385 4.21809 16.4591 4.96663 16.7634C5.71518 17.0677 6.53747 17.1419 7.32838 16.9765C8.1193 16.811 8.84291 16.4135 9.40672 15.8346L14.0887 18.8439C13.7751 19.6529 13.7287 20.541 13.9563 21.3783C14.1839 22.2156 14.6736 22.958 15.3537 23.4968C16.0338 24.0356 16.8685 24.3425 17.7356 24.3726C18.6028 24.4027 19.4568 24.1543 20.1725 23.664C20.8883 23.1736 21.4283 22.4669 21.7134 21.6475C21.9985 20.828 22.0138 19.9388 21.757 19.11C21.5001 18.2812 20.9847 17.5565 20.2862 17.0418C19.5876 16.5272 18.7427 16.2497 17.875 16.25ZM17.875 3.25002C18.3571 3.25002 18.8284 3.39298 19.2292 3.66081C19.63 3.92865 19.9425 4.30933 20.127 4.75473C20.3114 5.20012 20.3597 5.69022 20.2657 6.16305C20.1716 6.63588 19.9395 7.0702 19.5986 7.41109C19.2577 7.75198 18.8234 7.98413 18.3505 8.07818C17.8777 8.17223 17.3876 8.12396 16.9422 7.93948C16.4968 7.75499 16.1161 7.44257 15.8483 7.04172C15.5805 6.64088 15.4375 6.16961 15.4375 5.68752C15.4375 5.04105 15.6943 4.42107 16.1514 3.96395C16.6085 3.50683 17.2285 3.25002 17.875 3.25002ZM6.5 15.4375C6.01791 15.4375 5.54664 15.2946 5.1458 15.0267C4.74495 14.7589 4.43253 14.3782 4.24804 13.9328C4.06356 13.4874 4.01528 12.9973 4.10934 12.5245C4.20339 12.0517 4.43554 11.6173 4.77643 11.2764C5.11732 10.9356 5.55164 10.7034 6.02447 10.6094C6.4973 10.5153 6.9874 10.5636 7.43279 10.7481C7.87819 10.9326 8.25887 11.245 8.52671 11.6458C8.79454 12.0467 8.9375 12.5179 8.9375 13C8.9375 13.6465 8.68069 14.2665 8.22357 14.7236C7.76645 15.1807 7.14646 15.4375 6.5 15.4375ZM17.875 22.75C17.3929 22.75 16.9216 22.6071 16.5208 22.3392C16.12 22.0714 15.8075 21.6907 15.623 21.2453C15.4386 20.7999 15.3903 20.3098 15.4843 19.837C15.5784 19.3642 15.8105 18.9298 16.1514 18.5889C16.4923 18.2481 16.9266 18.0159 17.3995 17.9219C17.8723 17.8278 18.3624 17.8761 18.8078 18.0606C19.2532 18.2451 19.6339 18.5575 19.9017 18.9583C20.1695 19.3592 20.3125 19.8304 20.3125 20.3125C20.3125 20.959 20.0557 21.579 19.5986 22.0361C19.1415 22.4932 18.5215 22.75 17.875 22.75Z"
+          fill="white"
+        />
+      </svg>
+      <p class="text-white ml-2">Share</p>
+    </a>
+  </div>
+</div>
+</div>
+
+        </div>  
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-60 relative pb-12">
+      <div class="container w-full">
+        <div class="mb-2 relative">
+          <div
+            class="absolute top-2 lg:top-0 md:top-3 left-0 right-0 flex justify-center"
+          >
+            <svg
+              class="w-full h-full md:hidden"
+              viewBox="0 0 315 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 5.05923H28.1343L33.1935 0H45.5331L48.7414 9.99506L56.1451 5.05923H88.3317L108.075 34.7384H206.802L226.545 5.05923H257.878L262.813 10.1185H271.945L277.004 0.123396L281.57 5.05923H315V52H0V5.05923Z"
+                fill="#2F2737"
+              />
+            </svg>
+            <svg
+              class="w-full h-full md:block hidden"
+              viewBox="0 0 1520 141"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 20.5H114L134.5 0H184.5L197.5 40.5L227.5 20.5H520L600 120.5H919L999 20.5H1207L1227 41H1264L1284.5 0.5L1303 20.5H1519.5V140.5H0V20.5Z"
+                fill="#2F2737"
+              />
+            </svg>
+          </div>
+          <div class="w-full flex items-center justify-center">
+            <img
+              src="./assets/images/3_white-foot.png"
+              class="xl:w-auto lg:w-56 md:w-44 sm:w-52 w-28"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-12 py-20 px-5 gap-6 bg-[#2F2737]">
+          <div class="md:col-span-6 col-span-12">
+            <p class="font-black lg:text-[32px] max-md:text-lg text-white mb-4">
+              About Lidoma
+            </p>
+            <p class="font-normal lg:text-lg max-md:text-[13px] text-[#BCB9BE]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae
+              congue mauris rhoncus aenean vel elit scelerisque. In egestas erat
+              imperdiet sed euismod nisi porta lorem mollis. Morbi tristique
+              senectus et netus. Mattis pellentesque id nibh tortor id aliquet
+              lectus proin....
+            </p>
+          </div>
+          <div class="xl:col-span-2 md:col-span-3 col-span-6">
+            <h2 class="font-black lg:text-2xl text-white mb-6">Links</h2>
+            <ul>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Home</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Weblog</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">PUBG PC</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">FF 4v4</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Case Study</a>
+              </li>
+            </ul>
+          </div>
+          <div class="xl:col-span-2 md:col-span-3 col-span-6">
+            <h2 class="font-black lg:text-2xl text-white mb-6">Links</h2>
+            <ul>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Home</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Weblog</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">PUBG PC</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">FF 4v4</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Case Study</a>
+              </li>
+            </ul>
+          </div>
+          <div class="xl:col-span-2 md:col-span-3 col-span-6">
+            <h2 class="font-black lg:text-2xl text-white mb-6">Links</h2>
+            <ul>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Home</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Weblog</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">PUBG PC</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">FF 4v4</a>
+              </li>
+              <li class="lg:text-lg text-[#BCB9BE] font-normal mb-4">
+                <a href="">Case Study</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section></section>
+      <img
+        src="./assets/images/footer-l.png"
+        width="50%"
+        class="absolute left-0 bottom-0 -z-10 max-md:hidden"
+      />
+      <img
+        src="./assets/images/footer-r.png"
+        width="50%"
+        class="absolute right-0 bottom-0 -z-10 max-md:hidden"
+      />
+      <img
+        src="./assets/images/pattern-foo-mb.png"
+        class="absolute right-0 bottom-0 -z-10 lg:hidden"
+      />
+    </footer>
+    <!-- ---------------------------- -->
+    <script src="./assets/js/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper-cs", {
+        slidesPerView: 3,
+        spaceBetween: 35,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./assets/js/raw.js"></script>
+    <script src="./assets/js/alpine.js"></script>
+  </body>
+</html>
