@@ -135,11 +135,11 @@
 }
 
 .mySwiper-cs .swiper-button-next {
-  margin-top: -98px;
+  margin-top: -113px;
 }
 .mySwiper-cs .swiper-button-prev {
-  margin-top: -98px;
-  margin-left: 790px;
+  margin-top: -113px;
+  margin-left: 983px;
 }
 @media screen and (max-width: 768px) {
   .mySwiper-cs .swiper-button-next {
@@ -236,16 +236,6 @@ h1 {
   user-select: none;
 }
 
-@media (max-width: 550px) {
-  body {
-    box-sizing: border-box;
-    transform: translate(0, 0);
-    max-width: 100%;
-    min-height: 100%;
-    margin: 0;
-    left: 0;
-  }
-}
 
 .accardion-tr h1,
 .h2 {
