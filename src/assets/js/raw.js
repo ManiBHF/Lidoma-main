@@ -135,7 +135,7 @@ paragraphs.forEach((paragraph) => {
   const hideButton = paragraph.querySelector(".hide-btn");
 
   toggleButton.addEventListener("click", function () {
-    moreTextSpan.style.display = "block";
+    moreTextSpan.style.display = "flex";
     hideButton.style.display = "inline";
     toggleButton.style.display = "none";
   });
