@@ -147,67 +147,7 @@ paragraphs.forEach((paragraph) => {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   const importantForms = document.querySelectorAll(".important-form");
-//   const submitButton = document.getElementById("submitButton");
 
-//   // تابعی برای بررسی وضعیت ورودی‌ها در فرم‌های اصلی
-//   function checkImportantForms() {
-//       return Array.from(importantForms).every(form => {
-//           const emailInput = form.querySelector("input[type='email']");
-//           const textInputs = form.querySelectorAll("input[type='text']");
-//           const isEmailValid = isValidEmail(emailInput.value.trim());
-//           const areAllTextInputsFilled = Array.from(textInputs).every(input => input.value.trim() !== "");
-//           return isEmailValid && areAllTextInputsFilled;
-//       });
-//   }
-
-//   // تابعی برای بررسی اعتبار ایمیل
-//   function isValidEmail(email) {
-//       const emailRegex = /^[a-zA-Z0-9._-]+@[a-zAZ0-9.-]+\.[a-zA-Z]{2,4}$/;
-//       return emailRegex.test(email);
-//   }
-
-//   // برای هر فرم رویدادهای ورودی را ایجاد می‌کنیم و وضعیت دکمه submit را بر اساس آن به‌روزرسانی می‌کنیم
-//   importantForms.forEach(form => {
-//       const emailInput = form.querySelector("input[type='email']");
-//       const textInputs = form.querySelectorAll("input[type='text']");
-      
-//       emailInput.addEventListener("input", function() {
-//           const areImportantFormsValid = checkImportantForms();
-//           submitButton.disabled = !areImportantFormsValid;
-//           if (areImportantFormsValid) {
-//               submitButton.classList.remove("inactive-button");
-//               submitButton.classList.add("active-button");
-//           } else {
-//               submitButton.classList.remove("active-button");
-//               submitButton.classList.add("inactive-button");
-//           }
-//       });
-
-//       textInputs.forEach(input => {
-//           input.addEventListener("input", function() {
-//               const areImportantFormsValid = checkImportantForms();
-//               submitButton.disabled = !areImportantFormsValid;
-//               if (areImportantFormsValid) {
-//                   submitButton.classList.remove("inactive-button");
-//                   submitButton.classList.add("active-button");
-//               } else {
-//                   submitButton.classList.remove("active-button");
-//                   submitButton.classList.add("inactive-button");
-//               }
-//           });
-//       });
-//   });
-
-//   // افزودن رویداد فرم برای منع ارسال فرم در صورت عدم پر شدن تمام ورودی‌ها
-//   submitButton.addEventListener("click", function(event) {
-//       if (submitButton.disabled) {
-//           event.preventDefault();
-//           alert("لطفاً ایمیل را با فرمت صحیح وارد کنید و تمام متن‌ها را در فرم‌های اصلی پر کنید.");
-//       }
-//   });
-// });
 
 
 let emea = document.getElementById('emea')
