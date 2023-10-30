@@ -30,6 +30,9 @@ module.exports = {
         'header-tor': "url('../images/header-tour.png')",
         'header-tor-mb': "url('../images/header-mb-tour.png')",
         'main-tr': "url('../images/main-tr.png')",
+        'inp-btn': "url('../images/btn-inp-new.png')",
+        'new-d-1': "url('../images/newv-1.png')",
+        'tour-newv': "url('../images/tour-newv.png')",
 
       }
     },

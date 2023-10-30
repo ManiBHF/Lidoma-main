@@ -36,61 +36,7 @@ if (dots.style.display === "none") {
 
 
 
-  // const modal = document.getElementById("myModal");
-
-  // const btnModal = document.getElementById("myBtn");
-
-  // const closeBtn = document.getElementsByClassName('.close');
-
-  // closeBtn.onclick = function () {
-  //   modal.style.display = "none";
-  // };
-  // btnModal.onclick = function () {
-  //   modal.style.display = "block";
-  // };
-
-
-  // window.onclick = function (event) {
-  //   if (event.target == modal) {
-  //     modal.style.display = "none";
-  //   }
-  // };
-
  
-  
-  
-  
-  
-  
-
-// const buttonLabels = ["دکمه ۱", "دکمه ۲", "دکمه ۳", "دکمه ۴", "دکمه ۵", "دکمه ۶", "دکمه ۷", "دکمه ۸"];
-
-// const buttonsContainer = document.getElementById('buttons');
-// const modal = document.getElementById('modal');
-// const modalText = document.getElementById('modalText');
-// const closeModal = document.getElementById('closeModal');
-
-// buttonLabels.forEach((label, index) => {
-//     const button = document.createElement('button');
-//     button.textContent = label;
-//     buttonsContainer.appendChild(button);
-
-//     button.addEventListener('click', () => {
-//         modal.style.display = 'block';
-//         modalText.textContent = ${index + 1} ;
-//     });
-// });
-
-// closeModal.addEventListener('click', () => {
-//     modal.style.display = 'none';
-// });
-
-// window.addEventListener('click', (event) => {
-//     if (event.target === modal) {
-//         modal.style.display = 'none';
-//     }
-// });
-
 
 function closeModal(modalId) {
   const modal = document.getElementById(modalId);

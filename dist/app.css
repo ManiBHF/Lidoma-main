@@ -1,7 +1,9 @@
 @tailwind base;
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 [x-cloak] {
   display: none;
 }
@@ -27,6 +29,7 @@ html{
 .tab-content .active {
   display: flex;
 }
+
 .swiper-pagination-bullet {
   width: 18px;
   height: 18px;
@@ -35,6 +38,7 @@ html{
 .divider::before {
   background: white;
 }
+
 .divider::after {
   background: white;
 }
@@ -82,28 +86,38 @@ html{
 }
 
 .mySwiper-2 .swiper-button-next {
+  right: 0;
   border: 1px solid #4e4653;
   padding: 20px;
   background: #403847;
 }
 
+.mySwiper-2 :is(.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled) {
+  pointer-events: all;
+}
+
 .mySwiper-2 .swiper-button-next:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 .mySwiper-2 .swiper-button-prev {
+  left: 0;
   background: #403847;
   border: 1px solid #4e4653;
   padding: 20px;
 }
+
 .mySwiper-2 .swiper-button-prev:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 @media screen and (max-width: 768px) {
   .mySwiper-2 .swiper-button-prev {
     margin-top: 125px;
     margin-left: 100px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .mySwiper-2 .swiper-button-next {
     margin-top: 125px;
@@ -116,14 +130,17 @@ html{
   padding: 20px;
   background: #403847;
 }
+
 .mySwiper-3 .swiper-button-next:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 .mySwiper-3 .swiper-button-prev {
   background: #403847;
   border: 1px solid #4e4653;
   padding: 20px;
 }
+
 .mySwiper-3 .swiper-button-prev:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
@@ -132,6 +149,7 @@ html{
   margin-top: 183px;
   margin-left: 80px;
 }
+
 .mySwiper-3 .swiper-button-next {
   margin-top: 183px;
   margin-right: 80px;
@@ -140,10 +158,12 @@ html{
 .mySwiper-cs .swiper-button-next {
   margin-top: -113px;
 }
+
 .mySwiper-cs .swiper-button-prev {
   margin-top: -113px;
   margin-left: 983px;
 }
+
 @media screen and (max-width: 768px) {
   .mySwiper-cs .swiper-button-next {
     margin-top: 29px;
@@ -157,19 +177,23 @@ html{
     margin-left: 75px;
   }
 }
+
 .mySwiper-cs .swiper-button-next {
   border: 1px solid #4e4653;
   padding: 20px;
   background: #403847;
 }
+
 .mySwiper-cs .swiper-button-next:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 .mySwiper-cs .swiper-button-prev {
   background: #403847;
   border: 1px solid #4e4653;
   padding: 20px;
 }
+
 .mySwiper-cs .swiper-button-prev:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
@@ -189,14 +213,17 @@ html{
   padding: 20px;
   background: #403847;
 }
+
 .mySwiper-8 .swiper-button-prev {
   border: 1px solid #4e4653;
   padding: 20px;
   background: #403847;
 }
+
 .mySwiper-8 .swiper-button-prev:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 .mySwiper-8 .swiper-button-next:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
@@ -205,14 +232,17 @@ html{
 
   margin-left: -13px;
 }
+
 .mySwiper-8 .swiper-button-next {
- 
+
   margin-right: -13px;
 }
-.mySwiper-8 .swiper-pagination{
+
+.mySwiper-8 .swiper-pagination {
   color: white !important;
   padding-right: 268px;
 }
+
 /* ----------- */
 
 .transition,
@@ -267,6 +297,7 @@ h1 {
   cursor: pointer;
   height: 85px;
 }
+
 @media screen and (max-width: 768px) {
   .accardion-tr .h2 {
     font-size: 13px;
@@ -320,6 +351,7 @@ h1 {
     width: 324px;
   }
 }
+
 .accardion-tr ul li i {
   position: absolute;
   transform: translate(-6px, 0);
@@ -331,18 +363,23 @@ h1 {
   padding: 17px 21px;
   margin-right: 15px;
 }
+
 .accardion-tr ul li:nth-of-type(1) {
   animation-delay: 0.5s;
 }
+
 .accardion-tr ul li:nth-of-type(2) {
   animation-delay: 0.75s;
 }
+
 .accardion-tr ul li:nth-of-type(3) {
   animation-delay: 1s;
 }
+
 .accardion-tr ul li:last-of-type {
   padding-bottom: 0;
 }
+
 .accardion-tr ul li i {
   position: absolute;
   transform: translate(-6px, 0);
@@ -353,6 +390,7 @@ h1 {
 .accardion-tr ul li:hover i {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 .accardion-tr ul li i:before,
 ul li i:after {
   content: "";
@@ -361,12 +399,15 @@ ul li i:after {
   width: 2px;
   height: 15px;
 }
+
 .accardion-tr ul li i:before {
   transform: translate(-6px, 0) rotate(45deg);
 }
+
 .accardion-tr ul li i:after {
   transform: translate(4px, 0) rotate(-45deg);
 }
+
 .accardion-tr ul li input[type="checkbox"] {
   position: absolute;
   cursor: pointer;
@@ -375,16 +416,19 @@ ul li i:after {
   z-index: 1;
   opacity: 0;
 }
-.accardion-tr ul li input[type="checkbox"]:checked ~ p {
+
+.accardion-tr ul li input[type="checkbox"]:checked~p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
   transform: translate(0, 50%);
 }
-.accardion-tr ul li input[type="checkbox"]:checked ~ i:before {
+
+.accardion-tr ul li input[type="checkbox"]:checked~i:before {
   transform: translate(5px, 0) rotate(45deg);
 }
-.accardion-tr ul li input[type="checkbox"]:checked ~ i:after {
+
+.accardion-tr ul li input[type="checkbox"]:checked~i:after {
   transform: translate(-5px, 0) rotate(-45deg);
 }
 
@@ -394,18 +438,23 @@ ul li i:after {
     transform-origin: top center;
     transform: rotateX(-90deg);
   }
+
   5% {
     opacity: 1;
   }
+
   80% {
     transform: rotateX(8deg);
   }
+
   83% {
     transform: rotateX(6deg);
   }
+
   92% {
     transform: rotateX(-3deg);
   }
+
   100% {
     transform-origin: top center;
     transform: rotateX(0deg);
@@ -427,36 +476,42 @@ ul li i:after {
   padding: 20px;
 }
 
-.inactive-button{
+.inactive-button {
   filter: grayscale();
 }
-.active-button{
+
+.active-button {
   filter: none;
 }
 
 .registerSwiper .swiper-slide {
   height: 347px;
 }
+
 .registerSwiper .swiper-button-next {
   border: 1px solid #675C6E;
   width: 40px;
   height: 40px;
   background-color: #403847;
 }
+
 .registerSwiper :is(.swiper-button-next, .swiper-button-prev) {
   border: 1px solid #675C6E;
   width: 40px;
   height: 40px;
   background-color: #403847;
 }
-.registerSwiper .swiper-button-prev{
+
+.registerSwiper .swiper-button-prev {
   left: 0;
   top: 35%;
 }
-.registerSwiper .swiper-button-next{
+
+.registerSwiper .swiper-button-next {
   right: 0;
   top: 35%;
 }
+
 .registerSwiper .swiper-button-prev:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
@@ -464,10 +519,11 @@ ul li i:after {
 .registerSwiper .swiper-button-next:hover {
   background: linear-gradient(to right, #ff4000, #ff9500);
 }
+
 @media only screen and (width >=768px) {
-  .swiper-btn :is(.swiper-button-next, .swiper-button-prev, .swiper-pagination){
+  .swiper-btn :is(.swiper-button-next, .swiper-button-prev, .swiper-pagination) {
     display: none;
-  } 
+  }
 }
 
 .popup-button {
@@ -484,7 +540,7 @@ ul li i:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(26, 26, 26, 0.371);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .popup img {
@@ -504,5 +560,41 @@ ul li i:after {
   font-size: 24px;
   cursor: pointer;
 }
+
+.registerSwiper-2 .swiper-button-next {
+  border: 1px solid #675C6E;
+  width: 40px;
+  height: 40px;
+  background-color: #403847;
+}
+.registerSwiper-2 :is(.swiper-button-next, .swiper-button-prev) {
+  border: 1px solid #675C6E;
+  width: 40px;
+  height: 40px;
+  background-color: #403847;
+}
+.registerSwiper-2 .swiper-button-prev{
+  left: 0;
+  top: 40%;
+}
+.registerSwiper-2 .swiper-button-next{
+  right: 0;
+  top: 40%;
+}
+.registerSwiper-2 .swiper-button-prev:hover {
+  background: linear-gradient(to right, #ff4000, #ff9500);
+}
+
+.registerSwiper-2 .swiper-button-next:hover {
+  background: linear-gradient(to right, #ff4000, #ff9500);
+}
+@media only screen and (width >=768px) {
+  .swiper-btn :is(.swiper-button-next, .swiper-button-prev, .swiper-pagination){
+    display: none;
+  } 
+}
+
 @tailwind components;
 @tailwind utilities;
+
+
